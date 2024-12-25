@@ -73,6 +73,13 @@
 <body>
     <div class="container">
         <h1>OTP Verification</h1>
+        
+        <div>
+	    <h3 style="color: green;" th:text="${session.success}"></h3>
+	    <h3 style="color: red;" th:text="${session.failure}"></h3>
+	    <th:block th:text="${@messageRemover.remove()}"></th:block>
+	</div>
+        
         <form action="/vendor/otp" method="post">
             <input type="hidden" name="id" th:value="${id}">
             <label for="otp">Enter OTP:</label>
