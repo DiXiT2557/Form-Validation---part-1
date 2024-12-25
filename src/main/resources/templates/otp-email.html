@@ -1,69 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+ <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTP Verification</title>
+    <title>otp</title>
+    <title>One Time Password</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom right, #f0f8ff, #add8e6);
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
         .container {
-            text-align: center;
-            background: white;
+            max-width: 600px;
+            margin: 0 auto;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 90%;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #1e90ff;
-            margin-bottom: 10px;
-        }
-        h3 {
-            font-size: 1.2em;
-            margin: 5px 0;
-            color: #555;
-        }
-        h4 {
-            margin: 10px 0;
-            font-weight: normal;
-            color: #444;
+            color: blue;
         }
         h2 {
-            color: #ff4500;
-            font-size: 2em;
-            margin: 10px 0;
-        }
-        h5 {
-            margin-top: 20px;
-            color: #777;
-        }
-        span {
-            font-size: 0.8em;
-            color: #aaa;
-            display: block;
-            margin-top: 10px;
+            color: green;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hello,</h1>
-        <h3 th:text="${name}">User Name</h3>
+    <div align="center">
+        <h1 style="color:blue">Hello, </h1>
+    <div class="container" align="center">
+        <h1>Hello, </h1>
+        <h3 th:text="${name}"></h3>
+        <h4>Your OTP is : </h4>
         <h4>Your OTP is:</h4>
-        <h2 th:text="${otp}">123456</h2>
+        <h2 th:text="${otp}"></h2>
         <h5>Thanks and Regards</h5>
-        <span>Ekart &copy; All rights reserved</span>
+        <span>Ekart All rights reserved</span>
     </div>
 </body>
-</html>
